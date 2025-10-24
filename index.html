@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +12,29 @@
             <img src="https://picsum.photos/200" alt="Logo" class="h-20 w-20 rounded-full"/>
         </div>
         <nav class="flex align-right">
-            <a class="border p-2" href="#home">Home</a>
-            <a class="border p-2" href="#profile">My Profile</a>
-            <a class="border p-2" href="#portofolio">Portofolio</a>
-            <a class="border p-2" href="#contact">Contact Me</a>
+            <a class="border p-2 hover:bg-blue-300" href="#home">Home</a>
+            <a class="border p-2 hover:bg-blue-300" href="#profile">My Profile</a>
+            <a class="border p-2 hover:bg-blue-300" href="#portofolio">Portofolio</a>
+            <a class="border p-2 hover:bg-blue-300" href="#contact">Message Us</a>
         </nav>
     </header>
     <hr/>
-    <main class="p-4">
-        <section id="home" class="mb-8 p-4 text-center">
-            <h1 class="text-4xl font-bold mb-4" id="greet-name">Welcome to My Personal Portofolio</h1>
-            <p class="text-lg">Hello! I'm Kemal Raisya Badrian, a Bachelor of Information System graduate passionate about technology and development. Explore my profile and portfolio to learn more about me and my work!</p>
+    <main class="p-4 max-w-5xl mx-auto">
+        <section id="home" class="mb-18 mt-18 p-4 text-center">
+            <h1 class="text-5xl font-bold mb-10" id="greet-name">Welcome to My Personal Portofolio</h1>
+            <p class="text-base">Hello! I'm Kemal Raisya Badrian, a Bachelor of Information System graduate passionate about technology and development. Explore my profile and portfolio to learn more about me and my work!</p>
+            <a href="#profile" class="block mt-16 transition-transform transform hover:scale-105 border p-2 rounded bg-blue-500 text-white w-48 mx-auto">
+            <p class="mt-4 text-sm italic">Scroll down to see more</p>
+            <div class="mt-2 animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+            </a>
         </section>
         <hr/>
-        <section id="profile" class="mb-8 p-4">
-            <h2 class="text-2xl font-bold mb-4">My Profile</h2>
+        <section id="profile" class="mt-8 mb-8 p-4">
+            <h2 class="text-3xl font-bold mb-8">My Profile</h2>
             <p class="mb-2"><b>Name:</b> Kemal Raisya Badrian</p>
             <p class="mb-2"><b>Degree:</b> Bachelor of Information System</p>
             <p class="mb-2"><b>Bio:</b> 
@@ -38,9 +46,9 @@
             Right now, I’m building my portfolio to showcase projects that reflect my creativity and technical growth. I’m also open to collaborations or opportunities where I can keep learning and contribute to something meaningful.</p>
         </section>
         <hr/>
-        <section id="portofolio" class="mb-8 p-4">
-            <h2 class="text-2xl font-bold mb-4">My Portofolio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <section id="portofolio" class="mt-8 mb-8 p-4">
+            <h2 class="text-3xl font-bold mb-8">My Portofolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <div class="border rounded p-4">
                     <h3 class="font-semibold mb-2">Simple Production Management App</h3>
                     <p class="text-sm">A web application to manage production processes efficiently.</p>
@@ -56,8 +64,8 @@
             </div>
         </section>
         <hr/>
-        <section id="contact" class="mb-8 p-4">
-            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+        <section id="contact" class="mt-8 mb-8 p-4">
+            <h2 class="text-3xl font-bold mb-8">Message Us</h2>
             <form class="space-y-4">
                 <div>
                     <label for="name" class="block mb-1">Name:</label>
@@ -78,7 +86,7 @@
     <hr/>
     <footer>
         <div class="p-4 text-center">
-            <p class="text-sm">&copy; 2024 Kemal R. All rights reserved.</p>
+            <p class="text-sm">Created by Kemal Raisya.</p>
         </div>
     </footer>
     <script src="js/script.js"></script>
