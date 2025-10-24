@@ -4,75 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Personal</title>
-    <!-- CSS External Link -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-
-    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <!-- Header Content -->
     <header class="main-header p-[8px] flex justify-between items-center bg-gray-200">
-        <!-- Logo Website -->
         <div class="main-logo">
             <img src="https://picsum.photos/200" alt="Logo" class="h-20 w-20 rounded-full"/>
         </div>
-
-        <!-- Navigasi Website -->
-        <nav class="flex gap-1 align-right">
-            <a class="border rounded p-2" href="#home">Home</a>
-            <a class="border rounded p-2" href="#profile">My Profile</a>
-            <a class="border rounded p-2" href="#portofolio">Portofolio</a>
-            <a class="border rounded p-2" href="#contact">Contact Me</a>
+        <nav class="flex align-right">
+            <a class="border p-2" href="#home">Home</a>
+            <a class="border p-2" href="#profile">My Profile</a>
+            <a class="border p-2" href="#portofolio">Portofolio</a>
+            <a class="border p-2" href="#contact">Contact Me</a>
         </nav>
     </header>
-
     <hr/>
-
-    <!-- Main Content -->
     <main class="p-4">
-        
-        <!-- Show a simple welcome message -->
-        <section id="home" class="mb-8 p-4">
-            <h1 class="text-3xl font-bold mb-4" id="greet-name">Welcome to My Personal Portofolio</h1>
-            <p class="text-lg">Hello! I'm Kemal Raisya Badrian, a passionate developer eager to showcase my work and skills.</p>
+        <section id="home" class="mb-8 p-4 text-center">
+            <h1 class="text-4xl font-bold mb-4" id="greet-name">Welcome to My Personal Portofolio</h1>
+            <p class="text-lg">Hello! I'm Kemal Raisya Badrian, a Bachelor of Information System graduate passionate about technology and development. Explore my profile and portfolio to learn more about me and my work!</p>
         </section>
-
         <hr/>
-
-        <!-- Show a simple my profile -->
         <section id="profile" class="mb-8 p-4">
             <h2 class="text-2xl font-bold mb-4">My Profile</h2>
-            <p class="mb-2">Name: Kemal Raisya Badrian</p>
-            <p class="mb-2">Degree: Bachelor of Information System</p>
-            <p class="mb-2">Bio: I am a dedicated developer with a passion for creating dynamic and user-friendly web applications. With experience in HTML, CSS, JavaScript, and various frameworks, I strive to deliver high-quality solutions that meet client needs.</p>
+            <p class="mb-2"><b>Name:</b> Kemal Raisya Badrian</p>
+            <p class="mb-2"><b>Degree:</b> Bachelor of Information System</p>
+            <p class="mb-2"><b>Bio:</b> 
+            <br>
+            Hi! I’m Kemal Raisya, an Information Systems graduate and a passionate developer from Indonesia. I enjoy creating digital experiences — from interactive web applications to 3D games built in Unity.
+            <br>
+            I’m always eager to learn new technologies and improve my skills in programming, especially in C#, JavaScript, HTML, CSS, and SQL. I’m detail-oriented, a quick learner, and love turning ideas into something people can actually use and enjoy.
+            <br>
+            Right now, I’m building my portfolio to showcase projects that reflect my creativity and technical growth. I’m also open to collaborations or opportunities where I can keep learning and contribute to something meaningful.</p>
         </section>
-
         <hr/>
-
-        <!-- Show my portofolio -->
         <section id="portofolio" class="mb-8 p-4">
             <h2 class="text-2xl font-bold mb-4">My Portofolio</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <!-- Example Portofolio Item -->
                 <div class="border rounded p-4">
-                    <h3 class="font-semibold mb-2">Project Title 1</h3>
-                    <p class="text-sm">Brief description of the project.</p>
+                    <h3 class="font-semibold mb-2">Simple Production Management App</h3>
+                    <p class="text-sm">A web application to manage production processes efficiently.</p>
                 </div>
                 <div class="border rounded p-4">
-                    <h3 class="font-semibold mb-2">Project Title 2</h3>
-                    <p class="text-sm">Brief description of the project.</p>
+                    <h3 class="font-semibold mb-2">Development of 3D Interactive Game Using Unity 3D</h3>
+                    <p class="text-sm">A 3D interactive game developed using Unity 3D engine.</p>
                 </div>
                 <div class="border rounded p-4">
-                    <h3 class="font-semibold mb-2">Project Title 3</h3>
-                    <p class="text-sm">Brief description of the project.</p>
+                    <h3 class="font-semibold mb-2">Expense Tracker</h3>
+                    <p class="text-sm">A web application to track and manage personal expenses.</p>
                 </div>
             </div>
         </section>
-
         <hr/>
-
-        <!-- Show a form for contact me -->
         <section id="contact" class="mb-8 p-4">
             <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
             <form class="space-y-4">
@@ -88,21 +71,16 @@
                     <label for="message" class="block mb-1">Message:</label>
                     <textarea id="message" name="message" placeholder="Type your messages here..." class="w-full border rounded p-2 placeholder-gray-400 placeholder-opacity-40" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+                <button type="submit" class="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600" id="send-message">Send Message</button>
             </form>
         </section>         
     </main>
-
     <hr/>
-
-    <!-- Footer Content -->
     <footer>
         <div class="p-4 text-center">
             <p class="text-sm">&copy; 2024 Kemal R. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- JavaScript External Link -->
     <script src="js/script.js"></script>
 </body>
 </html>
