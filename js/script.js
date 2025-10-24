@@ -13,7 +13,7 @@ function validateContactForm() {
         alert("Please fill in all fields.");
         return false;
     }
-    alert("Thank you for contacting me!");
+    alert("Thank you for your message!");
     return true;
 }
 
